@@ -6,71 +6,73 @@
     <title>Setlhare Utility Solutions</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Arial, sans-serif;
         margin: 0;
         padding: 0;
         background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
         color: #333;
-      }
-
-      header {
-        background: linear-gradient(to right, #00796b, #2e7d32);
-        color: white;
-        padding: 1.5rem 1rem;
         text-align: center;
       }
 
+      header {
+        background: linear-gradient(90deg, #00796b, #004d40);
+        color: white;
+        padding: 2rem 1rem;
+      }
+
       header h1 {
-        margin: 0;
         font-size: 2rem;
-        text-transform: uppercase;
+        margin: 0;
         letter-spacing: 1px;
       }
 
       header p {
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
+        margin-top: 8px;
+        font-size: 1.2rem;
         font-style: italic;
+        opacity: 0.9;
       }
 
-      .hero {
+      .gallery {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         gap: 20px;
-        padding: 2rem;
+        margin: 3rem auto;
+        max-width: 1000px;
       }
 
-      .hero img {
+      .gallery img {
         width: 300px;
         height: 200px;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
-      .hero img:hover {
+      .gallery img:hover {
         transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
       }
 
       .description {
-        text-align: center;
         font-size: 1.2rem;
-        margin: 1rem auto;
         max-width: 600px;
+        margin: 1rem auto;
       }
 
       footer {
         background: #004d40;
         color: white;
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: 2rem;
+        padding: 1.5rem 0;
+        font-size: 1rem;
+        margin-top: 3rem;
       }
 
-      footer strong {
+      footer .contact {
+        margin-top: 8px;
         font-size: 1.1rem;
       }
     </style>
@@ -78,22 +80,23 @@
   <body>
     <header>
       <h1>Setlhare Utility Solutions</h1>
-      <p>One-stop utilities solutions shop</p>
+      <p>Your one-stop utilities solutions hub</p>
     </header>
 
-    <section class="hero">
-      <img src="https://images.unsplash.com/photo-1560264418-c4445382edbc?auto=format&fit=crop&w=600&q=80" alt="Tree / Nature" />
-      <img src="https://images.unsplash.com/photo-1521207418485-99c705420785?auto=format&fit=crop&w=600&q=80" alt="Water drop" />
-      <img src="https://images.unsplash.com/photo-1595428774225-49b89dfebf91?auto=format&fit=crop&w=600&q=80" alt="Electricity meter" />
+    <section class="gallery">
+      <img src="https://images.unsplash.com/photo-1603791452906-cb84b5ff7e8d?auto=format&fit=crop&w=800&q=80" alt="Electricity meter" />
+      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80" alt="Water drop" />
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Tree symbolizing sustainability" />
     </section>
 
-    <div class="description">
-      Providing reliable and sustainable solutions to your water and electricity issues.
-    </div>
+    <p class="description">
+      Providing reliable and sustainable solutions to your water and electricity issues.  
+      We are committed to powering homes and communities with efficiency and care.
+    </p>
 
     <footer>
-      📞 Contact us: <strong>+267 72244236</strong><br />
-      © 2025 Setlhare Utility Solutions. All rights reserved.
+      <div>📞 Contact us: <strong>+267 72244236</strong></div>
+      <div class="contact">© 2025 Setlhare Utility Solutions. All rights reserved.</div>
     </footer>
   </body>
 </html>
